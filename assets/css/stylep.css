@@ -74,7 +74,27 @@ a {
   
 }
 
-#pf1{
+.project-img {
+    display: inline-block;
+    z-index: 1;
+}
+
+.project-label{
+    font-size: 18px;
+    text-align: center;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 0px;
+    line-height: 20px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    z-index: 0;
+    /* position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0px; */
+}
+/* #pf1{
     font-size: 18px;
     text-align: center;
     background-color: #4aaaa5;
@@ -82,7 +102,7 @@ a {
     padding: 0px;
     line-height: 20px;
    
-}
+} */
 
 .bar{
     background: #4aaaa5;
