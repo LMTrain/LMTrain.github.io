@@ -44,9 +44,7 @@ h1 {
     color: white;
 }
 
-/* p{
-    width: 958px;
-} */
+
 h2 {
      
     font-size: 24px;
@@ -81,30 +79,9 @@ a {
     text-align: center;
     background-color: #4aaaa5;
     color: white;
-    /* width: 197px; */
-    /* height: 20px; */
     padding: 0px;
     line-height: 20px;
-    /* display: inline-block; */
-    /* margin-left: 10px; */
-
-}
-
-#pf2{
-    
-}
-
-#pf3{
-    
-}
-
-#pf4{
-    
-}
-
-
-#pf5{
-    
+   
 }
 
 .bar{
