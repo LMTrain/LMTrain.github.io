@@ -1,64 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
- <head>
-     <title>Contact</title>
-     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-     <link rel="stylesheet" type="text/css" href="assets/css/stylec.css">
-  
- </head>   
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Laycon Muriziq</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/stylec.css">
+</head>
+
 <body>
-    <header>
-        <div class="page-title">
-            <h1>Laycon Muriziq</h1>
-        </div>
-            <div class="links">
-                <a href="index.html" title="Click on About">            About</a>
-                <a href="portfolio.html" title="Click on Portfolio">            Portfolio</a>
-                <a href="contact.html" title="Click on Contact">            Contact</a>
-            </div>
-    </header>
+
+  <header id="masthead">
     <div class="container">
-        <h2>Contact</h2>
-        <hr> 
-        <br> 
-
-        <section id="form">
-            
-            <form>
-                Name<br>
-                <input type="text" name="Name" style="width: 955px;">
-                <br><br>
-                Email<br>
-                <input type="text" name="Email" style="width: 955px;">
-                <br><br>
-                Message<br>
-                <input type="text" name="Message" style="width: 955px; height: 200px;">
-            </form>
-            <br>
-            <button class="btn-primary" type="submit" title="Click Submit">Submit</button>
-
-
-        </section>
-
-        
+      <a href="index.html" id="logo">Laycon Muriziq</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-    
-    <footer>
-      
-            <section class="bar">
-               
-                
-            </section>
-            <section class="bar2">
-                Copyright (C)
-                
-            </section>
-        </footer>
+  </header>
 
-    <div>
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
 
-        
-    </div>    
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Femi Muriziq" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit" title="Click Submit">
+      </form>
+
+    </section>
+
+    <section class="sidebar">
+      <div id="connect">
+        <h2>Connect with Me</h2>
+  
+        <a href="https://lmtrain.github.io/" title="Github">
+          <img src="assets/images/github-128.png" class="social" alt="Github">
+        </a>
+        <a href="https://www.linkedin.com/in/laycon-muriziq-a94a77b2/" title="Linkedin">
+          <img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn">
+        </a>
+        <a href="https://stackoverflow.com/users/11236209/lm-train?tab=profile" title="Stack Overflow">
+          <img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow">
+        </a>
+      </div>
+    </section>  
+  </div>
+  <footer>
+    <div class="container">
+      Copyright &copy; 
+    </div>
+  </footer>
 </body>
-    
+
 </html>
