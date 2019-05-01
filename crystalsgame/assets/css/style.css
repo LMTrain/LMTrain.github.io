@@ -1,0 +1,142 @@
+.background {
+    background-image: url("../images/blue_diamond.jpg");
+    color: rgb(10, 10, 10);        
+}
+
+.contents-r1-c1 {
+    background: rgb(204, 77, 77);
+    font-family: 'Bodoni MT Black';
+    text-align:center;
+    color: white;
+    margin:5px;
+}
+
+.contents-r2-c1 {
+    background: rgb(241, 180, 66);
+    text-align: left;
+    color:  rgb(26, 70, 167);
+    font-size: 18px;
+    margin:1px;
+    height: 380px;
+    margin-top: 5px;
+}
+
+.contents-r3-c1 {
+    background: green;
+    text-align:center;
+    font-family: 'Bodoni MT Black';
+    font-size: 18px;
+    color: white;
+    margin:1px;
+    height: 180px;
+    margin-top: 16px;
+}
+
+
+.contents-r3-c2{
+    background: rgb(90, 213, 235);
+    text-align:center;
+    font-size: 18px;
+    color: green;
+    margin:1px;
+    height: 180px;
+    margin-top: 15px;
+    
+}
+
+.contents-r4-c1 {
+    /* border: 4px dotted white; */
+    background: rgb(46, 107, 236);
+    font-family: 'Arial Narrow';
+    text-align:center;
+    margin:1px;
+    height: 120px;
+    margin-top: 5px;
+}
+
+.contents-r4-c2 {
+    /* border: 4px dotted white; */
+    background: rgb(46, 107, 236);
+    font-family: 'Arial Narrow';
+    text-align:center;
+    margin:1px;
+    height: 120px;
+    margin-top: 5px;
+}
+
+.contents-r4-c3 {
+   /* border: 4px dotted white; */
+   background: rgb(46, 107, 236);
+   font-family: 'Arial Narrow';
+   text-align:center;
+   margin:1px;
+   height: 140px;
+   margin-top: 5px;
+}
+
+.contents-r4-c4 {
+    /* border: 4px dotted white; */
+    background: rgb(46, 107, 236);
+    font-family: 'Arial Narrow';
+    text-align:center;
+    margin:1px;
+    height: 140px;
+    margin-top: 5px;
+}
+
+.contents-r5-c1 {
+    background: green;
+    text-align:left;
+    font-size: 18px;
+    color: white;
+    margin:1px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.contents-r6-c1 {
+    background: green;
+    text-align:left;
+    font-family: 'Bodoni MT Black';
+    font-size: 30px;
+    color: white;
+    margin:1px;
+    height: 180px;
+    margin-top: 5px;
+    
+}
+
+
+    /* #artist-is{
+        text-align:center;
+        font-size: 24px;
+        color: yellow;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif bold;
+    } */
+
+    /* #computer-guess-block{
+       
+        font-size: 24px;
+        color: yellow;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif bold;
+        margin-left: 10px;
+    }
+
+
+    
+
+    
+
+    #start-button {
+        font-size: 40px bold;
+        font-family: 'Bodoni MT Black';
+        color: green;
+
+    }
+    
+    #submit-button {
+        font-size: 30px bold;
+        font-family: 'Bodoni MT Black';
+        color: green;
+    }
+    */

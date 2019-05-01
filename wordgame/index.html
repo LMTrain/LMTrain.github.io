@@ -1,91 +1,98 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        
-    </head>
+<head>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <body>
-        
-        <div class="container background">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="contents-r1-c1"><h1>Word Guess Game - 90's R&B Artist</h1></div>               
+</head>
+
+<body>
+
+    <div class="container background">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="contents-r1-c1">
+                    <h1>Word Guess Game - 90's R&B Artist</h1>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="contents-r2-c1"><img src="assets/images/2image.jpg">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="contents-r2-c2">
-                        <!-- <P>Computer</P> -->
-                        <!-- <p id= "computer-guess-block"><br></p> -->
-                        <!-- <p onmouseover="style.color='red'" onmouseout="style.color='white'">Click Button To Start Game<input type="text" size="25" id="user-text"></p> -->
-                        <button onclick="startFunction()"><h1 id= "start-button"></h1></button>
-                        
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="contents-r2-c3"><img src="assets/images/3image.jpg">
-                        
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="content-r3">
-                        <P id= "artist-is"><br></P>
-                            <div style="width: 55px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
-                                <p id= "computer-guess-block"><br></p>
-                            </div>
-                        <p onmouseover="style.color='red'" onmouseout="style.color='yellow'" id= "user-text-input"><br></p>
-                        <p onmouseover="style.color='red'" onmouseout="style.color='white'"><input type="text" size="20" id="user-text"></p>
-                        <!-- <p id= "submit-button"></p> -->
-                        <!-- <button type="button" onclick="document.getElementById('submit-button').style.display='none'"></button> -->
-                        <button onclick="myFunction()"><h1 id= "submit-button"></h1></button>
-                        
-                        
-                        
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="mid-content-r3-c2">
-                        <p> Computer Guess is:<br></p>
-                        <p id="computer-guess"><br></p>
-                        <p><br>Your Guess is:<br></p>
-                        <p id="user-input"><br></p>
-                        
-                        
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="content-r3">
-                        <p id="total-wins"><br></p>
-                        <p id="total-losses"><br></p>
-                        <p id="total-guesses"><br></p>
-                        
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="contents-r4-c1">
-                        <p>Copyright(c)</p>
-                    </div>
-                </div>
-            </div>
-            
-            <script src="assets/javascript/game.js"></script>
         </div>
-    </body>
-    
+        <div class="row">
+            <div class="col-md-4">
+                <div class="contents-r2-c1"><img src="assets/images/2image.jpg">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="contents-r2-c2">
+                    <!-- <P>Computer</P> -->
+                    <!-- <p id= "computer-guess-block"><br></p> -->
+                    <!-- <p onmouseover="style.color='red'" onmouseout="style.color='white'">Click Button To Start Game<input type="text" size="25" id="user-text"></p> -->
+                    <button onclick="startFunction()">
+                        <h1 id="start-button"></h1>
+                    </button>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="contents-r2-c3"><img src="assets/images/3image.jpg">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="content-r3">
+                    <P id="artist-is"><br></P>
+                    <div style="width: 55px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+                        <p id="computer-guess-block"><br></p>
+                    </div>
+                    <p onmouseover="style.color='red'" onmouseout="style.color='yellow'" id="user-text-input"><br></p>
+                    <p onmouseover="style.color='red'" onmouseout="style.color='white'"><input type="text" size="20"
+                            id="user-text"></p>
+                    <!-- <p id= "submit-button"></p> -->
+                    <!-- <butn type="button" onclick="document.getElementById('submit-button').style.display='none'"></button> -->
+                    <button onclick="myFunction()">
+                        <h1 id="submit-button"></h1>
+                    </button>
+
+
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mid-content-r3-c2">
+                    <p> Computer Guess is:<br></p>
+                    <p id="computer-guess"><br></p>
+                    <p><br>Your Guess is:<br></p>
+                    <p id="user-input"><br></p>
+
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="content-r3">
+                    <p id="total-wins"><br></p>
+                    <p id="total-losses"><br></p>
+                    <p id="total-guesses"><br></p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="contents-r4-c1">
+                    <p>Copyright(c)</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/javascript/game.js"></script>
+    </div>
+</body>
+
 </html>

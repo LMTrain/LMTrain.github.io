@@ -1,4 +1,4 @@
-       
+
 var computerChoices = ["Soul For Real", "Michael Jackson", "Faith Evans", "Salt n Pepa", "K Ci & Jojo", "R. Kelly", "Destiny Child", "Fugees", "Color me Badd", "Shanice", "Lisa Stansfield", "Tony Toni Tone", "Jade", "Keith Sweat", "Aaron Hall", "Johnny Gill", "Jodeci", "Brandy", "Monica", "Usher", "Mary J Blige", "Montell Jordan", "Blackstreet", "Dr. Dre", "Snoop Dogg", "xscape", "Puff Daddy", "Mint Condition", "Jagged Edge", "Jennifer Lopez", "Heavy D", "Tupac", "Jay Z", "Beyonce", "En Vogue", "Sade", "Dru Hill", "Lauryn Hill", "Whitney Houston", "Boyz II Men", "Santana", "Luther Vandross", "Mark Morrison", "Joe", "Babyface", "Tina Turner", "Tevin Campbell", "Tyrese"];
 // var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 var userInput = [];
@@ -25,16 +25,16 @@ function startFunction() {
   document.getElementById("total-losses").textContent = " Loses = " + losses;
   document.getElementById("total-guesses").textContent = " Guesses = " + guesses;
   userInputN = userInputN - 1;
-  document.getElementById("start-button").innerHTML = "Click To Start Over";
+  document.getElementById("start-button").innerHTML = "CLICK TO START";
   $('#start-button').click(
-    function(){
+    function () {
       location.reload(true);
     }
   )
-  
+
 };
 function myFunction() {
-  if (startF > 6 ) {
+  if (startF > 6) {
 
     guesses = guesses - 1;
     document.getElementById("total-guesses").textContent = " Guesses = " + guesses;
@@ -50,7 +50,7 @@ function myFunction() {
     // console.log(computerGuess + " -- This Computer Guess");
     document.getElementById("computer-guess").innerHTML = computerGuessR[userInputN];
     document.getElementById("user-text").value = '';
-    
+
     if (userInput[userInputN] === computerGuessR[userInputN]) {
       // console.log(userInput[userInputN] + "   " + computerGuessR[userInputN]);
       wins = wins + 1;
@@ -61,27 +61,27 @@ function myFunction() {
       losses = losses + 1;
       document.getElementById("total-losses").textContent = " Loses = " + losses;
     }
-  
+
     if (guesses <= 0) {
       gameOver()
-    } 
-  
+    }
+
   }
   else if (startF <= 6) {
     gamenotstarted()
   }
-  
-  
+
+
 };
 
 function gameOver() {
   document.getElementById("user-text-input").innerHTML = "GAME OVER!!!!!";
   document.getElementById("user-text").innerHTML = "GAME OVER!!!!!";
-  document.getElementById("artist-is").style.visibility='hidden';
-  document.getElementById("computer-guess-block").style.visibility='hidden';
+  document.getElementById("artist-is").style.visibility = 'hidden';
+  document.getElementById("computer-guess-block").style.visibility = 'hidden';
   document.getElementById("submit-button").innerHTML = "CLICK TO RESTART";
   $('#submit-button').click(
-    function(){
+    function () {
       location.reload(true);
     }
   )
@@ -90,13 +90,13 @@ function gameOver() {
 function gamenotstarted() {
   document.getElementById("submit-button").innerHTML = "CLICK TO START GAME";
   $('#submit-button').click(
-    function(){
+    function () {
       location.reload(true);
     }
   )
 };
 
-document.getElementById("start-button").innerHTML = "Click To Start Game";
+document.getElementById("start-button").innerHTML = "CLICK TO START";
 
 
 

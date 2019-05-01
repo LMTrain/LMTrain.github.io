@@ -218,33 +218,34 @@ input[type=submit] {
 
 @media screen and (max-width: 980) {
 
-}
-body {
-    background: url("../images/concrete_seamless.png");
+
+  body {
+      background: url("../images/concrete_seamless.png");
+  }
+  .wrapper{
+    width: 600px;
+  }
 }
 
-.wrapper{
-    width: 600px;
-}
+
 
 @media screen and (max-width: 768) {
-
-}
-body {
+  body {
     background: url("../images/concrete_seamless.png");
+  }
+
+  .wrapper{
+      width: 600px;
+  }
 }
 
-.wrapper{
-    width: 600px;
-}
 
 @media screen and (max-width: 640) {
-
-}
-body {
+  body {
     background: url("../images/concrete_seamless.png");
-}
+  }
 
-.wrapper{
-    width: 600px;
+  .wrapper{
+      width: 600px;
+  }
 }
