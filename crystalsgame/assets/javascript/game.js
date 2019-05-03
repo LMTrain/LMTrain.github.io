@@ -12,11 +12,11 @@ $(document).ready(function () {
 
         finalNumber = 0;
 
-        hexagonNumber = Math.floor(Math.random() * 13);
-        diamondNumber = Math.floor(Math.random() * 13);
-        octagonNumber = Math.floor(Math.random() * 13);
-        squareNumber = Math.floor(Math.random() * 13);
-        computerPick = Math.floor(Math.random() * 121);
+        hexagonNumber = Math.floor(Math.random() * 12 + 1);
+        diamondNumber = Math.floor(Math.random() * 12 + 1);
+        octagonNumber = Math.floor(Math.random() * 12 + 1);
+        squareNumber = Math.floor(Math.random() * 12 + 1);
+        computerPick = Math.floor(Math.random() * 101 + 19);
         $("#computer-pick").text(computerPick);
         $("#final-number").text(finalNumber);
         $("#total-wins").text("Wins = " + wins);
