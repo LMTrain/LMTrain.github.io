@@ -1,0 +1,107 @@
+.background {
+    background-image: url("../images/background.jpeg");
+    color: rgb(10, 10, 10);        
+}
+
+.contents-r1-c1 {
+    background: none;
+    font-family: 'Bodoni MT Black';
+    text-align:center;
+    color: white;
+    margin:5px;
+    margin-left: 50px;
+    height: 10px;
+}
+
+.button-wrapper1{
+    cursor:pointer;
+    width:200px;
+    height:80px;
+    color:white;
+    font-size:38px;
+}
+
+.button-wrapper1:hover{
+    color: green;
+}
+
+.button-wrapper2:hover{
+    color: green;
+}
+
+.button-wrapper2{
+    cursor:pointer;
+    width:360px;
+    height:100px;
+    color:white;
+    font-size:38px;
+}
+
+.button-wrapper{
+    cursor:pointer;
+    width:650px;
+    height:50px;
+    color:white;
+    font-size:38px;
+}
+
+.button-wrapper:hover{
+    color: green;
+}
+
+.contents-r1-c3 {
+    background: none;
+    font-family: 'Bodoni MT Black';
+    text-align: right;
+    color: white;
+    margin-top: 80px;
+    height: 10px;
+    padding: 2px
+}
+
+.contents-r2-c1 {
+    background: none;
+    font-family: 'Bodoni MT Black';
+    text-align: left;
+    color:  white;
+    font-size: 38px;
+    margin-left:5px;
+    height: 240px;
+    margin-top: 180px;
+    padding: 5px;
+}
+
+.contents-r2-c2 {
+    background: none;
+    font-family: 'Bodoni MT Black';
+    text-align: left;
+    color:  white;
+    font-size: 38px;
+    margin-left:10px;
+    height: 200px;
+    margin-top: 200px;
+}
+
+.contents-r3-c1 {
+    background: none;
+    font-family: 'Bodoni MT Black';
+    text-align: left;
+    color:  white;
+    font-size: 38px;
+    margin-left:10px;
+    height: 220px;
+    margin-top: 40px;
+    padding: 5px;
+}
+
+
+#start-time {
+    background: none;
+    font-family: 'Bodoni MT Black';
+    text-align: left;
+    color: white;
+    font-size: 38px;
+}
+
+
+   
