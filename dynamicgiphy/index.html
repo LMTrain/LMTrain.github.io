@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hip Hop Artists</title>
+
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  
+</head>
+
+<body>
+
+  <div class="container-background">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="contents-r1-c1">
+          <h3>Hip Hop Artist Search</h3>             
+          <!-- <div class="button-wrapper"> -->
+
+            <div id="buttons-view"></div>
+          <!-- </div> -->
+          <form id="artist-form">
+              <label for="artist-input">Add an Artist</label>
+              <input type="text" id="artist-input">
+              <br>
+              <!-- Button triggers new artist to be added -->
+              <input id="add-artist" type="submit" value="Add an Artists">
+          </form>   
+                  
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-12">
+        <div class="contents-r2-c1">
+          <h3>Hip Hop Artists</h3>
+          <div id="artists-title"></div>
+          <div id="artists-view"></div>
+        </div>
+      </div>      
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script src="assets/javascript/app.js"></script>
+  </div>  
+  
+</body>
+
+</html>
