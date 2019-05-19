@@ -6,8 +6,7 @@
 div {
     margin: 5px;
     display: inline-block;
-    color:yellow;
-    /* font-size: 18px; */
+    color:yellow;   
     background-blend-mode: color-burn;
     font-family: 'Bodoni MT Black';
 }

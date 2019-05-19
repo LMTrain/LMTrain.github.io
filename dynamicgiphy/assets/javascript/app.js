@@ -1,16 +1,13 @@
 
   // Initial array of artists
-  var artists = ['Tupac', 'Notorious B.I.G', "Faith Evans",'Jay Z', 'Outkast', 'Nicki Minaj', 'Drake', 'DJ Khaled', 'Chris Brown', 'Akon', 'R. Kelly', 'Beyonce', 'Aaliya', "Tyrese", "Luther Vandross", "Tina Turner", "Boyz II Men", "Usher", "Bobby Brown", "Cardi B"];
+  var artists = ['Tupac', 'Notorious B.I.G', "Faith Evans",'Jay Z', 'Outkast', 'Nicki Minaj', 'Drake', 'DJ Khaled', 'Chris Brown', 'Akon', 'R. Kelly', 'Beyonce', 'Aaliya', "Tyrese", "Luther Vandross", "Tina Turner", "Boyz II Men", "Usher", "Bobby Brown", "Cardi B", "Babyface", "Travis Scott", "Eminem"];
 
   // displayartistInfo function re-renders the HTML to display the appropriate content
   function displayartistInfo() {
 
     var artist = $(this).attr("data-name");
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + "&api_key=HEdbTT0vdsath3C9VzHnGKf0KeRx3w50&q=" + artist + "&limit=10&offset=0&rating=R&lang=en";
-    // "https://api.giphy.com/v1/gifs/search?api_key=HEdbTT0vdsath3C9VzHnGKf0KeRx3w50&q=tupac&limit=10&offset=0&rating=R&lang=en"
-
     
-
     // Creating an AJAX call for the specific artist button being clicked
     $.ajax({
       url: queryURL,
@@ -25,20 +22,14 @@
         for (var i = 0; i < results.length; i++) {
 
             // Creating and storing a div tag
-            var artistDiv = $("<div class='artist'>");
-            // var titleDiv = $("<div class='artists'>");
-            
-            var p = $("<p>").text(results[i].title);
-            // var p = $("<p>").text("Rating: " + results[i].title);
-            // p = p.attr("artists-title", results[i].title);
-            
+            var artistDiv = $("<div class='artist'>");                        
+            var p = $("<p>").text(results[i].title);                      
             var image = $("<img>");
             image.attr("src", results[i].images.fixed_height_still.url); 
             image.attr("data-still", results[i].images.fixed_height_still.url);
             image.attr("data-animate", results[i].images.fixed_height_downsampled.url);
             image.attr("data-state", "still");
-            image.on("click", function () {
-              console.log(state);
+            image.on("click", function () {          
              
               var state = $(this).attr("data-state");
              
@@ -51,8 +42,7 @@
               }
             });              
             artistDiv.append(p);     
-            artistDiv.append(image);
-            // $("#artists-title").prepend(artistDiv);
+            artistDiv.append(image);            
             $("#artists-view").prepend(artistDiv);
         }      
     });
@@ -65,16 +55,11 @@
 
     // Looping through the array of artists
     for (var i = 0; i < artists.length; i++) {
-
       
-      var a = $("<button>");
-      
-      a.addClass("artist-btn");
-      
-      a.attr("data-name", artists[i]);
-      
-      a.text(artists[i]);
-     
+      var a = $("<button>");      
+      a.addClass("artist-btn");      
+      a.attr("data-name", artists[i]);      
+      a.text(artists[i]);     
       $("#buttons-view").append(a);
     }
   }
