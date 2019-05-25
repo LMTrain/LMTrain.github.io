@@ -67,10 +67,13 @@
   
   $("#add-artist").on("click", function(event) {
     event.preventDefault();
+    
     var artist = $("#artist-input").val().trim();
     artists.push(artist);
    
     renderButtons();
+    // Clear the textbox when done
+    $("#artist-input").val("");
   });
   
   $(document).on("click", ".artist-btn", displayartistInfo);
