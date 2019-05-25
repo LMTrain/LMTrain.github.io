@@ -12,7 +12,7 @@
 
 <body>
 
-    <div class="container background">
+    <div class="container-background">
         <div class="row">
             <div class="col-md-12">
                 <div class="contents-r1-c1">
@@ -21,23 +21,21 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
-                <div class="contents-r2-c1"><img src="assets/images/2image.jpg">
+            <div class="col-md-6">
+                <div class="contents-r2-c1">
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="contents-r2-c2">
-                    <!-- <P>Computer</P> -->
-                    <!-- <p id= "computer-guess-block"><br></p> -->
-                    <!-- <p onmouseover="style.color='red'" onmouseout="style.color='white'">Click Button To Start Game<input type="text" size="25" id="user-text"></p> -->
+                    
                     <button onclick="startFunction()">
                         <h1 id="start-button"></h1>
                     </button>
 
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="contents-r2-c3"><img src="assets/images/3image.jpg">
+            <div class="col-md-2">
+                <div class="contents-r2-c3">
 
                 </div>
             </div>
@@ -47,14 +45,13 @@
             <div class="col-md-4">
                 <div class="content-r3">
                     <P id="artist-is"><br></P>
-                    <div style="width: 55px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+                    <div style="width: 225px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; text-align: center">
                         <p id="computer-guess-block"><br></p>
                     </div>
                     <p onmouseover="style.color='red'" onmouseout="style.color='yellow'" id="user-text-input"><br></p>
-                    <p onmouseover="style.color='red'" onmouseout="style.color='white'"><input type="text" size="20"
-                            id="user-text"></p>
-                    <!-- <p id= "submit-button"></p> -->
-                    <!-- <butn type="button" onclick="document.getElementById('submit-button').style.display='none'"></button> -->
+                    <p onmouseover="style.color='red'" onmouseout="style.color='white'"><input id="user-text" type="text" size="20" 
+                        id="user-text"></p>
+                    
                     <button onclick="myFunction()">
                         <h1 id="submit-button"></h1>
                     </button>
@@ -92,6 +89,7 @@
         </div>
 
         <script src="assets/javascript/game.js"></script>
+
     </div>
 </body>
 

@@ -1,45 +1,41 @@
-/* body {
-    background-image: url("../images/background.png");
-    color: white;        
-} */
 
-.background {
-    background-image: url("../images/pageimage.png");
+.container-background {
+    background-size:cover;
+    background-image: url("../images/image.png");
     color: white;        
 }
 .content-r3{
-        border: 4px dotted white;
-        /* background: black; */
+        border: 4px dotted white;       
         text-align:center;
-        font-size: 24px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif bold;
+        font-size: 34px;
+        font-family: 'Bodoni MT Black';
         margin:5px;
-        height: 330px;
+        height: 360px;
         margin-top: 50px;
     }
 
     #artist-is{
         text-align:center;
-        font-size: 24px;
+        font-size: 34px;
         color: yellow;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif bold;
+        font-family: 'Bodoni MT Black';
     }
 
-    #computer-guess-block{
-        /* text-align:center; */
-        font-size: 24px;
-        color: yellow;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif bold;
-        margin-left: 10px;
+    #computer-guess-block{        
+        font-size: 36px;
+        text-align:center;
+        color: red;
+        font-family: 'Bodoni MT Black';
+        margin-left: 140px;
     }
 
     .mid-content-r3-c2{
         border: 4px dotted white;
         text-align:center;
-        font-size: 24px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif bold;
+        font-size: 34px;
+        font-family: 'Bodoni MT Black';
         margin:5px;
-        height: 330px;
+        height: 360px;
         margin-top: 50px;
         
     }
@@ -60,9 +56,7 @@
         margin:5px;
     }
 
-    .contents-r2-c1 {
-        /* border: 4px dotted white; */
-        /* background: black; */
+    .contents-r2-c1 {        
         text-align:center;
         margin:5px;
         height: 260px;
@@ -81,16 +75,13 @@
         font-family: 'Bodoni MT Black';
         color: green;
     }
-    .contents-r2-c2 {
-        /* border: 4px dotted white; */
+    .contents-r2-c2 {        
         margin:5px;
         height: 100px;
         margin-top: 580px;
     }
 
-    .contents-r2-c3 {
-        /* border: 4px dotted white; */
-        /* background: black; */
+    .contents-r2-c3 {        
         text-align:center;
         margin:5px;
         height: 260px;

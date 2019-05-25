@@ -1,6 +1,6 @@
 
 var computerChoices = ["Soul For Real", "Michael Jackson", "Faith Evans", "Salt n Pepa", "K Ci & Jojo", "R. Kelly", "Destiny Child", "Fugees", "Color me Badd", "Shanice", "Lisa Stansfield", "Tony Toni Tone", "Jade", "Keith Sweat", "Aaron Hall", "Johnny Gill", "Jodeci", "Brandy", "Monica", "Usher", "Mary J Blige", "Montell Jordan", "Blackstreet", "Dr. Dre", "Snoop Dogg", "xscape", "Puff Daddy", "Mint Condition", "Jagged Edge", "Jennifer Lopez", "Heavy D", "Tupac", "Jay Z", "Beyonce", "En Vogue", "Sade", "Dru Hill", "Lauryn Hill", "Whitney Houston", "Boyz II Men", "Santana", "Luther Vandross", "Mark Morrison", "Joe", "Babyface", "Tina Turner", "Tevin Campbell", "Tyrese"];
-// var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
 var userInput = [];
 var userInputL = [];
 var computerGuessR = [];
@@ -12,20 +12,28 @@ var guesses = 5;
 
 
 function startFunction() {
+  $("#start-button").hide();
+  var input = document.getElementById("user-text");
+  input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+    event.preventDefault();
+    document.getElementById("submit-button").click();
+    }
+  });
   startF = startF + 1;
   computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
   document.getElementById("artist-is").innerHTML = "Computer Guess Artist is:";
   document.getElementById("computer-guess-block").innerHTML = computerGuess;
   document.getElementById("submit-button").innerHTML = "Submit";
   computerGuessR.push(computerGuess);
-  userInputN = userInputN + 1;
-  // console.log(computerGuess + " -- This Computer Guess " + "computerGuessR =  " + computerGuessR[userInputN] + "  userInputN =  " + userInputN);
+  userInputN = userInputN + 1;  
   document.getElementById("user-text-input").innerHTML = "Complete Artist Name and click Submit:";
   document.getElementById("total-wins").textContent = "Wins = " + wins;
   document.getElementById("total-losses").textContent = " Loses = " + losses;
   document.getElementById("total-guesses").textContent = " Guesses = " + guesses;
   userInputN = userInputN - 1;
-  document.getElementById("start-button").innerHTML = "CLICK TO START";
+  $("#start-button").text("START");
+  
   $('#start-button').click(
     function () {
       location.reload(true);
@@ -34,6 +42,7 @@ function startFunction() {
 
 };
 function myFunction() {
+ 
   if (startF > 6) {
 
     guesses = guesses - 1;
@@ -44,20 +53,16 @@ function myFunction() {
     document.getElementById("computer-guess-block").innerHTML = computerGuess;
     computerGuessR.push(computerGuess);
     userInput.push(userText);
-    userInputN = userInputN + 1;
-    // console.log(userInput[userInputN] + "  userInput Array # =  " + userInputN);
-    document.getElementById("user-input").innerHTML = userInput[userInputN];
-    // console.log(computerGuess + " -- This Computer Guess");
+    userInputN = userInputN + 1;    
+    document.getElementById("user-input").innerHTML = userInput[userInputN];   
     document.getElementById("computer-guess").innerHTML = computerGuessR[userInputN];
     document.getElementById("user-text").value = '';
 
-    if (userInput[userInputN] === computerGuessR[userInputN]) {
-      // console.log(userInput[userInputN] + "   " + computerGuessR[userInputN]);
+    if (userInput[userInputN] === computerGuessR[userInputN]) {      
       wins = wins + 1;
       document.getElementById("total-wins").textContent = "Wins = " + wins;
     }
-    else if (userInput[userInputN] !== computerGuessR[userInputN]) {
-      // console.log(userInput[userInputN] + "   " + computerGuessR[userInputN]);
+    else if (userInput[userInputN] !== computerGuessR[userInputN]) {      
       losses = losses + 1;
       document.getElementById("total-losses").textContent = " Loses = " + losses;
     }
@@ -96,7 +101,8 @@ function gamenotstarted() {
   )
 };
 
-document.getElementById("start-button").innerHTML = "CLICK TO START";
+$("#start-button").text("START");
+
 
 
 
