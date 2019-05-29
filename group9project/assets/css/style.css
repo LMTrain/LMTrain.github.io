@@ -1,0 +1,61 @@
+.container-background {
+    background-size:cover;   
+    background-image: url("../img/background.jpg");
+}
+
+div {
+    margin: 5px;
+    display: inline-block;
+    color:yellow;   
+    background-blend-mode: color-burn;
+    font-family: 'Bodoni MT Black';
+}
+
+form 
+input {
+    margin: 5px;
+    color:red;
+    background-blend-mode: color-burn;
+    font-family: 'Bodoni MT Black';
+}
+
+
+.contents-r2-c1 {
+    font-family: 'Bodoni MT Black';    
+    text-align: left;
+    font-size: 14px;
+    margin-left:5px;
+    height: 950px;
+    margin-top: -5px;
+    padding: 5px;
+}
+
+button {
+    cursor:pointer;
+    border-radius:7px;
+    padding:4px;
+    margin:5px;    
+    color: black;    
+}
+
+button:hover{    
+    color: red;
+}
+
+#add-item {
+    cursor:pointer;
+    border-radius:7px;
+    padding:4px;
+    margin:5px;    
+    color: black;
+
+}
+
+#add-item:hover {
+    color: red;
+}
+
+#items-view {    
+    font-size: 20px;
+    cursor:pointer;
+}
