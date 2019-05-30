@@ -1,0 +1,11 @@
+.container {
+    background-size:cover;   
+    background-image: url("../images/background.png");
+}
+
+#train-table th,
+    td {
+      display: inline-block;
+      width: 20%;
+    }
+
