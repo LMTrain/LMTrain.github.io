@@ -17,8 +17,7 @@ $("#add-train-btn").on("click", function(event) {
   
   var trnName = $("#train-name-input").val().trim();
   var trnDestination = $("#destination-input").val().trim();
-  // var trnFtt = moment.unix(trnFtt).format("HH:mm");
-  var trnFtt = moment($("#ftt-input").val().trim(), "HH:mm").format("HH:mm");
+  var trnFtt = $("#ftt-input").val().trim();
   var trnFreq = $("#freq-input").val().trim();
   
   var newtrn = {
@@ -43,18 +42,30 @@ database.ref().on("child_added", function(childSnapshot) {
   var trnName = childSnapshot.val().name;
   var trnDestination = childSnapshot.val().destination;
   var trnFtt = childSnapshot.val().ftt;
-  var trnFreq = childSnapshot.val().freq;
+  var trnFreq = childSnapshot.val().freq;  
+  var fttConverted = moment(trnFtt, "HH:mm").subtract(1, "years");
   
-  // var trnFttPretty = moment.unix(trnFtt).format("HH:mm");  
-  var trnMinAway = moment().diff(moment(trnFtt, "HH:mm"), "time");
-  var trnNextArr = trnFreq + trnFtt;
+  // Current Time
+  var currentTime = moment();
+  
+  // Difference between the times
+  var diffTime = moment().diff(moment(fttConverted), "minutes");
+  
+  // Time apart (remainder)
+  var tRemainder = diffTime % trnFreq;
+ 
+  // Minute Until Train
+  var tMinutesTillTrain = trnFreq - tRemainder;
+  
+  // Next Train
+  var trnNextArr = moment().add(tMinutesTillTrain, "minutes");
   
   var newRow = $("<tr>").append(
     $("<td>").text(trnName),
     $("<td>").text(trnDestination),
     $("<td>").text(trnFreq),
     $("<td>").text(trnNextArr),
-    $("<td>").text(trnMinAway), 
+    $("<td>").text(tMinutesTillTrain), 
   );
 
   // Append the new row to the table
