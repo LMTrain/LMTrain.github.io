@@ -6,7 +6,8 @@
   function displayitemInfo() {
 
     var item = $(this).attr("data-name");
-    var queryURL = "assets/javascript/get_response.php?query="+item;
+    var queryURL = "https://api.walmartlabs.com/v1/search?&apiKey=vng9pukufs97mcyyjs5ps266&query="+item+"&format=json";
+    // var queryURL = "assets/javascript/get_response.php?query="+item;
     
     $.ajax({
       url: queryURL,
