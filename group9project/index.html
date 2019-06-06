@@ -17,7 +17,7 @@
   
 </head>
 
-<body>
+<body onload='initMap()'>
   <div class="container-background">
     <div class="row">
       <div class="col-md-12">
@@ -39,10 +39,13 @@
           </form>            
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-12">
         <div class="contents-r2-c2">
+            <div id="Loaction-place"></div>
           <form id="city-form">
+            
               <label for="city-input">Your Location</label>
+
               <input type="text" id="city-input" placeholder="City, State">              
               
               <input id="add-city" type="submit" value="Submit">
@@ -51,7 +54,7 @@
       </div>
 
     </div>
-
+    <div id="map"></div>
     <div class="row">
       <div class="col-md-12">
         <h3 class="h3c">Item Lists</h3>
@@ -62,11 +65,12 @@
           <div id="items-title"></div>
           <div id="items-view"></div>
         </div>
+        
       </div>      
     </div>
-    
+  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
+    <script src='https://rawgithub.com/stamen/modestmaps-js/master/modestmaps.min.js'></script>
     <script src="assets/javascript/app.js"></script>
   </div>  
   

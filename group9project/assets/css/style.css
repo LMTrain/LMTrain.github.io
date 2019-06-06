@@ -12,8 +12,7 @@ div {
 }
 
 .item{
-    width: 300px;
-    /* height: 350px; */
+    width: 300px;    
     display: inline-block;
     border: 2px solid black;
 }
@@ -108,3 +107,11 @@ button:hover{
     font-size: 16px;
     cursor:pointer;
 }
+#map {
+    position: relative;
+    top: 0; left: 0;
+    width: 400px;
+    height: 400px;
+    float: down;
+    
+    }
