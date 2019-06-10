@@ -1,0 +1,45 @@
+<div class="load-data">
+    <div class="block-content">
+        <a href="index.html">Home</a>
+        <div class="project-nav text-center">
+            <span class="float-left">
+                <a class="open-project" href="project-1.html">&leftarrow; Previous Project</a>
+            </span>
+            <span class="">
+                <a id="close-project" href="#"><i class="ion-grid"></i></a>
+            </span>
+            <span class="float-right">
+                <a class="open-project" href="project-3.html">Next Project &rightarrow; </a>
+            </span>
+        </div>
+        <div class="project-head">
+            <h1 class="block-title">Single Project - Giphy Images</h1>
+            <div class="tags"><span>Category : </span> Graphic / Serach Apps</div>
+            <div class="tags"><span>Client : </span> Boot camp</div>
+            <div class="tags"><span>Completion : </span> May 2019</div>
+            <div class="tags"><span>Role : </span> Developer</div>
+        </div>
+        <p class="project-description">Using the GIPHY API to make a dynamic web page that populates with gifs of user's choice. In this project, user will get the chance to add Hip Hop artist names of their choice and search for the gif of the artist both still and animated.</p>
+        <div class="project-media">
+            <div class="video-container">
+                    <a href="https://lmtrain.github.io/dynamicgiphy/" title="Dynamic Giphy">
+                    <img src="images/portfolio/masonry/dynamicgiphy.jpg" alt="Dynamic Giphy">
+                    </a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="row text-center">
+        <div class="col-md-12 btn-email">
+            <a class="btn lowercase">layconmm@msn.com</a>
+        </div>
+    </div>
+
+    <script>
+        $('#close-project').on('click', function() {
+            $('.content-blocks.pop').removeClass('showx');
+            $('.inline-menu-container').addClass('showx');
+            $('.content-blocks.pop section').empty();
+        });
+    </script>
+</div>

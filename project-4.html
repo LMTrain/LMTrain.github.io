@@ -1,0 +1,42 @@
+<div class="load-data">
+    <div class="block-content">
+        <a href="index.html">Home</a>
+        <div class="project-nav text-center">
+            <span class="float-left">
+                <a class="open-project" href="project-3.html">&leftarrow; Previous Project</a>
+            </span>
+            <span class="">
+                <a id="close-project" href="#"><i class="ion-grid"></i></a>
+            </span>
+            <span class="float-right">
+                <a class="open-project" href="project-5.html">Next Project &rightarrow; </a>
+            </span>
+        </div>        
+        <div class="project-head">
+            <h1 class="block-title">Single Project - Crystal Collector Game</h1>
+            <div class="tags"><span>Category : </span> Apps</div>
+            <div class="tags"><span>Client : </span> Boot Camp</div>
+            <div class="tags"><span>Completion : </span> April 2019</div>
+            <div class="tags"><span>Role : </span> Developer</div>
+        </div>
+        <p class="project-description">What the game is about - The user is given a random number at the start of the game. There are four crystals at the beginning that the user has to use for doing his or her calculation. By clicking on a crystal the user will add a specific amount of points to their total score. The user win the game by matching his or her total score to the random number picked by the computer, the user lose the game if their total score goes above the random number. The value of each crystal is hidden from the user until they click on it. Each time when the game starts, the game will change the values of each crystal.</p>
+        <div class="project-media row">
+            <a href="https://lmtrain.github.io/crystalsgame/" title="Crystal Game">
+            <img src="images/portfolio/masonry/crystalgame.jpg" alt="Crystal Game">
+            </a>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-12 btn-email">
+            <a class="btn lowercase">layconmm@msn.com</a>
+        </div>
+    </div>
+
+    <script>
+        $('#close-project').on('click', function() {
+            $('.content-blocks.pop').removeClass('showx');
+            $('.inline-menu-container').addClass('showx');
+            $('.content-blocks.pop section').empty();
+        });
+    </script>
+</div>
