@@ -1,33 +1,3 @@
-/*------------------------------------------------------------------
-
-    [Master Stylesheet]
-
-    Theme Name: Alpha | Personal vCard Template
-    Version: 1.0
-    Last change: 17/08/2017
-    Developer: LionCoders - http://www.lion-coders.com
-
--------------------------------------------------------------------*/
-
-
-/*------------------------------------------------------------------
-
-    [Table of contents]
-    
-    0. General Styles
-    1. Preloader
-    2. Home Styles
-    3. Menu Styles
-    4. Page Content
-    5. Name Block
-    6. About Block
-    7. Portfolio Block
-    8. Blog Block
-    9. Contact Block
-   10. Responsive
-
--------------------------------------------------------------------*/
-
 
 /* -------------------------------------------------------------------
 
@@ -2801,12 +2771,6 @@ ul.pagination li {
         width: 100%;
     }
 }
-
-/*-------------------------------------------------------------------
-
-                         Buy Now Button
-
--------------------------------------------------------------------*/
 
 .buy-now {
     background-color: #82B441;  
