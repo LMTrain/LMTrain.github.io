@@ -44,8 +44,7 @@
     
 }
 
-.contents-r4-c1 {
-    /* border: 4px dotted white; */
+.contents-r4-c1 {    
     background: rgb(46, 107, 236);
     font-family: 'Arial Narrow';
     text-align:center;
@@ -54,8 +53,7 @@
     margin-top: 5px;
 }
 
-.contents-r4-c2 {
-    /* border: 4px dotted white; */
+.contents-r4-c2 {    
     background: rgb(46, 107, 236);
     font-family: 'Arial Narrow';
     text-align:center;
@@ -64,8 +62,7 @@
     margin-top: 5px;
 }
 
-.contents-r4-c3 {
-   /* border: 4px dotted white; */
+.contents-r4-c3 {   
    background: rgb(46, 107, 236);
    font-family: 'Arial Narrow';
    text-align:center;
@@ -74,8 +71,7 @@
    margin-top: 5px;
 }
 
-.contents-r4-c4 {
-    /* border: 4px dotted white; */
+.contents-r4-c4 {    
     background: rgb(46, 107, 236);
     font-family: 'Arial Narrow';
     text-align:center;
@@ -105,38 +101,3 @@
     margin-top: 5px;
     
 }
-
-
-    /* #artist-is{
-        text-align:center;
-        font-size: 24px;
-        color: yellow;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif bold;
-    } */
-
-    /* #computer-guess-block{
-       
-        font-size: 24px;
-        color: yellow;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif bold;
-        margin-left: 10px;
-    }
-
-
-    
-
-    
-
-    #start-button {
-        font-size: 40px bold;
-        font-family: 'Bodoni MT Black';
-        color: green;
-
-    }
-    
-    #submit-button {
-        font-size: 30px bold;
-        font-family: 'Bodoni MT Black';
-        color: green;
-    }
-    */
