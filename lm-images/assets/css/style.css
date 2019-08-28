@@ -1,0 +1,29 @@
+.background {
+    background: none;
+    color: rgb(10, 10, 10);        
+}
+
+.contents-r1 {
+    
+    font-family: 'Bodoni MT Black';
+    text-align:center;
+    color: blue;
+    
+    
+   
+}
+.contents-r2 {
+    
+    font-family: 'Bodoni MT Black';
+    text-align:center;
+    color: blue;
+    height: 5px;
+    
+   
+}
+.contents-r2-c1 {
+    text-align: left;
+    color:  rgb(26, 70, 167);
+    font-size: 18px;
+   
+}
