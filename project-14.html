@@ -1,0 +1,43 @@
+<div class="load-data">
+    <div class="block-content">
+        <a href="index.html">Home</a>
+        <div class="project-nav text-center">
+            <span class="float-left">
+                <a class="open-project" href="project-13.html">&leftarrow; Previous Project || </a>
+            </span>
+            <span class="">
+                <a id="close-project" href="#"><i class="ion-grid"></i></a>
+            </span>
+            <span class="float-right">
+                <a class="open-project" href="project-1.html">Next Project &rightarrow; </a>
+            </span>
+        </div>
+        
+        <div class="project-head">
+            <h1 class="block-title">Single Project - Book Search</h1>
+            <div class="tags"><span>Category : </span> Graphics / Using React js, Node, Express, and MongoDB</div>
+            <div class="tags"><span>Client : </span> Boot Camp</div>
+            <div class="tags"><span>Completion : </span> September 2019</div>
+            <div class="tags"><span>Role : </span> Developer</div>
+        </div>
+        <p class="project-description">This is a React-based Google Books Search app. In this app, React components are created that works with helper/util functions, and utilize React lifecycle methods to query and display books based on user searches. This app also incorporate Node, Express and MongoDB, so that users can save books for review or purchase later.</p>
+        <p>Github Repository Link | | <a href="https://github.com/LMTrain/booksearch" target="_blank">https://github.com/LMTrain/booksearch</a></p>
+        <p>Deployed Link | | <a href="https://lmbooksearch.herokuapp.com/" target="_blank">https://lmbooksearch.herokuapp.com/</a></p>
+        <a href="https://lmbooksearch.herokuapp.com/" title="Click to go to webpage" target="_blank">
+        <img src="images/portfolio/masonry/booksearch.jpg" alt="Clicky Game">
+        </a>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-12 btn-email">
+            <a class="btn lowercase">layconmm@msn.com</a>
+        </div>
+    </div>
+
+    <script>
+        $('#close-project').on('click', function() {
+            $('.content-blocks.pop').removeClass('showx');
+            $('.inline-menu-container').addClass('showx');
+            $('.content-blocks.pop section').empty();
+        });
+    </script>
+</div>
