@@ -1,0 +1,43 @@
+<div class="load-data">
+    <div class="block-content">
+        <a href="index.html">Home</a>
+        <div class="project-nav text-center">
+            <span class="float-left">
+                <a class="open-project" href="project-7.html">&leftarrow; Previous Project || </a>
+            </span>
+            <span class="">
+                <a id="close-project" href="#"><i class="ion-grid"></i></a>
+            </span>
+            <span class="float-right">
+                <a class="open-project" href="project-9.html">Next Project &rightarrow; </a>
+            </span>
+        </div>
+        
+        <div class="project-head">
+            <h1 class="block-title">Single Project - Bamazon App</h1>
+            <div class="tags"><span>Category : </span> CLI Apps</div>
+            <div class="tags"><span>Client : </span> Boot Camp</div>
+            <div class="tags"><span>Completion : </span> July 2019</div>
+            <div class="tags"><span>Role : </span> Developer</div>
+        </div>
+        <p class="project-description">Bamazon is CLI app that functions like an Amazon storefront, using MySQL for storing, retrieving and updating stock inventories. The app will take in orders from customers and deplete stock from the store's inventory. Also the app can track product sales across store's departments and then provide a summary of the highest-grossing departments in the store.</p>
+        <p>Github Repository Link | | <a href="https://github.com/LMTrain/bamazone-app.git" target="_blank">https://github.com/LMTrain/bamazone-app.git</a>
+        <p>Deployed Link | | <a href="https://lmtrain.github.io/bamazone-app/" target="_blank">https://lmtrain.github.io/bamazone-app/</a></p>
+        <a href="https://lmtrain.github.io/bamazone-app/" title="Click to see video" target="_blank">
+        <img src="images/portfolio/masonry/bamazon.jpg" alt="Bamazon App">
+        </a>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-12 btn-email">
+            <a class="btn lowercase">layconsm@outlook.com</a>
+        </div>
+    </div>
+
+    <script>
+        $('#close-project').on('click', function() {
+            $('.content-blocks.pop').removeClass('showx');
+            $('.inline-menu-container').addClass('showx');
+            $('.content-blocks.pop section').empty();
+        });
+    </script>
+</div>
