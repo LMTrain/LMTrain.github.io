@@ -1,20 +1,25 @@
 .container-background {
-    background-size:cover;   
-    background-image: url("../images/background.png");
+    /* background-size:cover;    */
+    background-image: url("../images/2background.png");
 }
 
 div {
     margin: 5px;
     display: inline-block;
-    color:yellow;   
+    color:whitesmoke;   
     background-blend-mode: color-burn;
-    font-family: 'Bodoni MT Black';
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
 }
 
 form 
 input {
     margin: 5px;
-    color:red;
+    color:rgb(15, 73, 180);
     background-blend-mode: color-burn;
     font-family: 'Bodoni MT Black';
 }
@@ -39,7 +44,7 @@ button {
 }
 
 button:hover{    
-    color: red;
+    color: rgb(105, 152, 223);
 }
 
 #add-artist {
@@ -52,7 +57,7 @@ button:hover{
 }
 
 #add-artist:hover {
-    color: red;
+    color: rgb(24, 134, 57);
 }
 
 #artists-view {    
