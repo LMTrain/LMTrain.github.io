@@ -1,5 +1,5 @@
 .container-background {
-    /* background-size:cover;    */
+    background-size:cover;   
     background-image: url("../images/2background.png");
 }
 
@@ -21,18 +21,20 @@ input {
     margin: 5px;
     color:rgb(15, 73, 180);
     background-blend-mode: color-burn;
-    font-family: 'Bodoni MT Black';
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
 .contents-r2-c1 {
-    font-family: 'Bodoni MT Black';    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
     text-align: left;
-    font-size: 14px;
+    font-size: 12px;
     margin-left:5px;
     height: 950px;
     margin-top: -5px;
     padding: 5px;
+    border: 2px;
+   
 }
 
 button {
@@ -63,4 +65,17 @@ button:hover{
 #artists-view {    
     font-size: 20px;
     cursor:pointer;
+    border: 3px;    
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+    padding: 20px 20px 0px 20px;
+}
+
+img {
+    /* vertical-align: middle; */
+    border-style: dashed;   
+    padding: 0px 20px 0px 20px;
 }
