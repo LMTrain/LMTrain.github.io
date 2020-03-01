@@ -1,6 +1,6 @@
-.container {
+body{
     background-size:cover;   
-    background-image: url("../images/background.png");
+    background-image: url("../images/background.jpg");
 }
 
 #train-table th,
