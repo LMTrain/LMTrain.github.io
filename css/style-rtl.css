@@ -870,6 +870,10 @@ h2.menu-item:after {
     font-weight: 600;
 }
 
+.project-block-content {
+    background-color: #4dd133;
+}
+
 /*-------------------------------------------------------------------
 
                         5. NAME BLOCK
@@ -1623,6 +1627,7 @@ h4.package {
 
 .project-description {
     margin: 30px 0;
+    word-wrap: normal;
 }
 
 .project-media img {

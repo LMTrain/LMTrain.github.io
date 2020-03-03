@@ -868,6 +868,10 @@ h2.menu-item:after {
     font-weight: 600;
 }
 
+.project-block-content {
+    background-color: #4dd133;
+}
+
 /*-------------------------------------------------------------------
 
                         5. NAME BLOCK
