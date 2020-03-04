@@ -1,5 +1,9 @@
+<head>   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
 <div class="load-data">
-    <div style="margin-left: 300px; margin-right: 300px; margin-top: 50px; font-size: larger">
+    <!-- <div style="margin-left: 300px; margin-right: 300px; margin-top: 50px; font-size: larger">
         <a href="index.html">Home</a>
         <div class="project-nav text-center">
             <span class="float-left">
@@ -26,7 +30,80 @@
         <a href="https://scrapewithcheerio.herokuapp.com/" title="Click to go to webpage" target="_blank">
         <img src="images/portfolio/masonry/scrapewithcheerio.jpg" alt="Scrape With Cheerio" width="950" height="550">
         </a>
-    </div>    
+    </div> -->
+    
+    <div class=row>
+        <div class="col-md-6">
+            
+        </div>
+        <div class="col-md-6" style="padding-left: 240px; margin-top: 20px">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <span class="btn btn-success">
+                        <a style="color: whitesmoke" href="index.html">Home</a>
+                    </span>
+                    <li class="page-item enabled">
+                        <a class="page-link" href="project-8.html" >Previous</a>
+                        
+                    </li>
+                    <li class="page-item"><a class="page-link" href=project-1.html>1</a></li>
+                    <li class="page-item"><a class="page-link" href=project-2.html>2</a></li>
+                    <li class="page-item"><a class="page-link" href=project-3.html>3</a></li>
+                    <li class="page-item"><a class="page-link" href=project-4.html>4</a></li>
+                    <li class="page-item"><a class="page-link" href=project-5.html>5</a></li>
+                    <li class="page-item"><a class="page-link" href=project-6.html>6</a></li>
+                    <li class="page-item"><a class="page-link" href=project-7.html>7</a></li>
+                    <li class="page-item"><a class="page-link" href=project-8.html>8</a></li>
+                    <li class="page-item"><a class="page-link" href=project-9.html>9</a></li>
+                    <li class="page-item">
+                    <a class="page-link" href="project-1.html">Next</a>
+                    </li>
+                </ul>
+            </nav>            
+        </div>    
+    </div>
+    <div class=row>
+        <div class="col-md-6">
+            
+        </div>
+        <div class="col-md-6">
+            <div class="project-card">               
+                <div class="card" style="width: 950px; box-shadow: 0 5px 10px #6f6666, 0 5px 10px #6f6666; height: 80%;">
+                    <a href="https://scrapewithcheerio.herokuapp.com/" title="Click to go to webpage" target="_blank">
+                        <img src="images/portfolio/masonry/scrapewithcheerio.jpg" alt="Scrape With Cheerio" width="950" height="550">
+                        </a>
+                    <div class="card-body">
+                        
+                    <div class="tags"><span><b>Category : </b></span> Graphics / Scrape Using Cheerio</div>
+                        <div class="tags"><span><b>Client :</b></span> Boot Camp</div>
+                        <div class="tags"><span><b>Completion :</b></span> August 2019</div>
+                        <div class="tags"><span><b>Role : </b></span> Developer</div>
+                        <div class="tags"><span><b>Github Repository Link :</b> <a href="https://github.com/LMTrain/scrapewithcheerio" target="_blank">https://github.com/LMTrain/scrapewithcheerio</a></span></div>
+                        <div class="tags"><span><b>Deployed Link :</b> <a href="https://scrapewithcheerio.herokuapp.com/" target="_blank">https://scrapewithcheerio.herokuapp.com/</a></span></div>
+                        <br>
+                    <p class="card-text"><b>Description :</b> This is a web app that lets users view and leave comments on the latest news. The articles are aquired using Mongoose and Cheerio to scrape news from another site.</p>
+                    
+                    
+                    </div>
+                </div>
+            </div>       
+        </div>           
+    </div>
+  
+    <style>
+        @media (min-width: 576px) {
+            body {               
+                position: absolute;
+                align-items: center;
+                overflow: auto;
+            }
+            .project-card {
+                margin-top: 20px; 
+                vertical-align: middle;
+                margin-bottom: 20px;            
+            }
+        }        
+    </style>
 
     <script>
         $('#close-project').on('click', function() {
