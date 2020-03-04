@@ -1,5 +1,8 @@
+<head>   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
 <div class="load-data">
-    <div style="margin-left: 200px; margin-top: 50px; font-size: larger">
+    <!-- <div style="margin-left: 300px; margin-right: 380px; margin-top: 50px; font-size: larger">
         <a href="index.html">Home</a>
         <div class="project-nav text-center">
             <span class="float-left">
@@ -30,7 +33,75 @@
             </div>
         </div>
         
-    </div>   
+    </div> -->
+    <div style="margin-top: 20px; padding-right: 90px;">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+                <span class="btn btn-success">
+                    <a style="color: whitesmoke" href="index.html">Home</a>
+                </span>
+              <li class="page-item enabled">
+                <a class="page-link" href="project-1.html" >Previous</a>
+                
+              </li>
+              <li class="page-item"><a class="page-link" href=project-1.html>1</a></li>
+              <li class="page-item"><a class="page-link" href=project-2.html>2</a></li>
+              <li class="page-item"><a class="page-link" href=project-3.html>3</a></li>
+              <li class="page-item"><a class="page-link" href=project-4.html>4</a></li>
+              <li class="page-item"><a class="page-link" href=project-5.html>5</a></li>
+              <li class="page-item"><a class="page-link" href=project-6.html>6</a></li>
+              <li class="page-item"><a class="page-link" href=project-7.html>7</a></li>
+              <li class="page-item"><a class="page-link" href=project-8.html>8</a></li>
+              <li class="page-item"><a class="page-link" href=project-9.html>9</a></li>
+              <li class="page-item">
+                <a class="page-link" href="project-3.html">Next</a>
+              </li>
+            </ul>
+        </nav>
+    </div>  
+
+    <div class=row>
+        <div class="col-md-2">
+            
+        </div>
+        <div class="col-md-10">
+            <div class="project-card">
+                <h5 class="card-title" style="text-align: center; font-weight: bolder; padding-left: 80px;">Single Project - Giphy Images</h5>
+                <div class="card" style="width: 950px; box-shadow: 0 15px 18px #6f6666, 0 15px 20px #6f6666;  border-radius: .95rem; height: 80%;">
+                    <a href="https://lmtrain.github.io/dynamicgiphy/" title="Click to Search for Artist" target="_blank">
+                        <img src="images/portfolio/masonry/dynamicgiphy.jpg" alt="Dynamic Giphy" width="950" height="550">
+                        </a>
+                    <div class="card-body">                    
+                    <div class="tags"><span><b>Category : </b></span>  Graphic / Serach App</div>
+                        <div class="tags"><span><b>Client :</b></span> Boot Camp</div>
+                        <div class="tags"><span><b>Completion :</b></span> May 2019</div>
+                        <div class="tags"><span><b>Role : </b></span> Developer</div>
+                        <div class="tags"><span><b>Github Repository Link :</b> <a href="https://github.com/LMTrain/dynamicgiphy.git" target="_blank">https://github.com/LMTrain/dynamicgiphy.git</a></span></div>
+                        <div class="tags"><span><b>Deployed Link :</b> <a href="https://lmtrain.github.io/dynamicgiphy/" target="_blank">https://lmtrain.github.io/dynamicgiphy/</a></span></div>
+                        <br>
+                    <p class="card-text"><b>Description :</b> Using the GIPHY API to make a dynamic web page that populates with gifs of user's choice. In this project, user will get the chance to add Hip Hop artist names of their choice and search for the gif of the artist both still and animated.</p>
+                    
+                    
+                    </div>
+                </div>
+            </div>       
+        </div>           
+    </div>
+  
+    <style>
+        @media (min-width: 576px) {
+            body {               
+                position: absolute;
+                align-items: center;
+                overflow: auto;
+            }
+            .project-card {
+                margin-top: 20px; 
+                vertical-align: middle;
+                margin-bottom: 20px;            
+            }
+        }        
+    </style>  
 
     <script>
         $('#close-project').on('click', function() {
