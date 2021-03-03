@@ -67,7 +67,7 @@
 
 	// Typing Animation (Typed.js)
 	$('#element').typed({
-	    strings: ["SYSTEM ADMINISTRATOR", "FULL STACK WEB DEVELOPER"],
+	    strings: ["ERP SYSTEM ADMINISTRATOR", "FULL STACK WEB DEVELOPER"],
 	    typeSpeed: -40,
 	    loop: true,
 	    startDelay: 400,
