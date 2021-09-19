@@ -4,7 +4,7 @@
   "description": "LIRI is a command line node app. It is a _Language_ Interpretation and Recognition Interface. LIRI takes in parameters as an input from users and gives user back data that is requested for. In this case, this will be a search in Spotify for songs, Bands in Town for concerts, and OMDB for movies.",
   "main": "keys.js",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.2",
     "dotenv": "^8.0.0",
     "inquirer": "^6.3.1",
     "moment": "^2.24.0",
