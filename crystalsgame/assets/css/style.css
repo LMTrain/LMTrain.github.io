@@ -5,8 +5,10 @@
 
 .contents-r1-c1 {
     background: rgb(204, 77, 77);
+    background-position: 50%;
     font-family: 'Bodoni MT Black';
     text-align:center;
+    align-items: center;
     color: white;
     margin:5px;
 }
